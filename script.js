@@ -38,7 +38,7 @@ form.addEventListener('submit', (e) => {
         fetchWeatherData();
         search.value = "";
     } else {
-        fetchWeatherData(); // Fetch weather for current location if no city is provided
+        fetchWeatherData(); 
     }
     app.style.opacity = "0";
 });
@@ -75,7 +75,7 @@ function dayOfTheWeek(day, month, year) {
 }
 
 function fetchWeatherData() {
-    const api_key = '[Your API key Here]';
+    const api_key = '[Your Open Weather API key Here]';
 
     fetch(`https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${cityInput}`)
     .then(response => response.json())
