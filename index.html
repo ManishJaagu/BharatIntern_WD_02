@@ -1,0 +1,116 @@
+<!-- Name: J. Manish
+Task : 02 Weather App
+Web Development
+Bharat Intern -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">The Weather</h3>
+            <div>
+                <h1 class="temp">16&#176</h1>
+                <div class="city-name">
+                    <h1 class="name">London</h1>
+                    <small>
+                        <span class="time">06 : 00</span>
+                        -
+                        <span class="date">Monday Oct 7</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img 
+                        src="./assets/Weather Icon.jpeg" 
+                        alt="icon"
+                        width="50"
+                        height="50"
+                        class="icon"
+                    >
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form action="" id="locationInput">
+                <input type="text" class="search" placeholder="Search Location"/>
+                <button type="submit" class="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="location-btn" type="gps-location" class="track">
+                    <i class="fas fa-location"></i>
+                </button>
+            </form>
+            <ul class="cities">
+                <li class="city">New York</li>
+                <li class="city">New Delhi</li>
+                <li class="city">Bangalore</li>
+                <li class="city">Hyderabad</li>
+            </ul>
+            <ul class="coordinates">
+                <h4>Spatial Information</h4>
+                <li>
+                    <span>Latitude: </span>
+                    <span class="latitude">0.00</span>
+                </li>
+                <li>
+                    <span>Longitude: </span>
+                    <span class="longitude">0.00</span>
+                </li>
+                <li>
+                    <span>Coordinates: </span>
+                    <span class="coordinates">0.00, 0.00</span>
+                </li>
+                <li>
+                    <span>Country: </span>
+                    <span class="country">Country</span>
+                </li>
+            </ul>
+            <ul class="details">
+                <h4>Weather Details</h4>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud">89%</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity">89%</span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="wind">10 km/h</span>
+                </li>
+                <li>
+                    <span>Pressure</span>
+                    <span class="pressure">1013 hPa</span>
+                </li>
+                <li>
+                    <span>Visibility</span>
+                    <span class="visibility">10 km</span>
+                </li>
+                <li>
+                    <span>Feels Like</span>
+                    <span class="feels-like">16&#176C</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
